@@ -9,7 +9,7 @@ from tokenizers.pre_tokenizers import Whitespace
 cache_dir = "/data/huggingface_cache"
 os.environ["HF_HOME"] = cache_dir
 os.environ["HF_DATASETS_CACHE"] = cache_dir
-
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 raw_dataset=load_dataset("rojagtap/bookcorpus", split="train",cache_dir=cache_dir)
 
 #分批次加载数据集

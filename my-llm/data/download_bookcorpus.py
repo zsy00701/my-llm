@@ -4,6 +4,7 @@ import os
 cache_dir="/root/autodl-tmp"
 os.environ["HF_HOME"]=cache_dir
 os.environ["HF_DATASETS_CACHE"]=cache_dir
+os.environ['HF_ENDPOINT'] = 'https://hf-mirror.com'
 
 print("Loading dataset...")
 
