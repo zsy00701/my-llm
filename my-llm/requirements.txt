@@ -1,5 +1,8 @@
-# 基础环境
-python>=3.9,<3.12
+# ---------------------------------------------------
+# requirements.txt — 项目依赖清单
+# 说明：本项目要求 Python 版本 >=3.9 且 <3.12
+#      （请在项目的 setup.py 或 pyproject.toml 中通过 python_requires 指定）
+# ---------------------------------------------------
 
 # 深度学习框架
 torch>=2.0.0,<3.0.0      # PyTorch 主版本 2.x 推荐
@@ -9,11 +12,11 @@ torchvision               # 如果有图像相关任务可加
 tokenizers               # Hugging Face 高速分词库
 datasets                  # Hugging Face 数据集工具库
 
-# 模型 +预训练／微调库
+# 模型 + 预训练／微调库
 transformers>=4.30.0      # 提供模型定义、tokenizer、预训练任务等
 
 # 优化大规模训练库
-deepspeed>=0.17.0         # 大规模模型训练优化库，推荐最新版或稳定版本 :contentReference[oaicite:0]{index=0}
+deepspeed>=0.17.0         # 大规模模型训练优化库，推荐最新版或稳定版本
 
 # 其他常用工具
 numpy
